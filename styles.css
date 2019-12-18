@@ -12,16 +12,24 @@ body{
 img{
   width: 100%;
 }
+.bg-image{
+  position: absolute;
+  z-index: 0;
+  /* height: 100%; */
+  width: 100%;
+}
 
 .section{
   height: 100vh;
   width: 100%;
   background-color: black;
   padding: 50px;
+  padding-top: 0px; 
 }
 
 #ep-1{
-
+  background-image: url(img/ep-1-alt.jpg);
+  background-size: 100% auto;
 }
 
 .col{
@@ -33,7 +41,9 @@ img{
   font-size: 20px;
   transition: 0.3s;
   position: relative;
-  /* left: -50px; */
+  background: linear-gradient(to right, #FAF0D1 5%, #EFD270 60%, #E6B80B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
   display: inline-block;
   margin-bottom: 2rem;
@@ -47,7 +57,6 @@ img{
   box-shadow:  0 0 5px 2px transparent;
   width: 0px;
   transition: 0.4s;
-
 }
 .head-list:hover{
   /* color: darkorange; */
@@ -58,7 +67,6 @@ img{
   display: block;
   color: red;
   position: relative;
-  /* transform: scaleX(1); */
   width: 100%;
   box-shadow:  0 0 5px 2px rgb(0, 255, 13);
   position: relative;
@@ -77,4 +85,15 @@ li{
 ol{
   margin-left:0;
   padding-left: 7px;
+}
+
+.describing-text{
+  text-align: justify;
+  background: linear-gradient(to right, #FAF0D1 5%, #EFD270 60%, #E6B80B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  display: block;
+  position: relative;
+  right: -35px;
 }
